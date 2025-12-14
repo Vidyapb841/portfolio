@@ -122,47 +122,28 @@ img {
   align-items: center;
   font-weight: var(--font-semi);
 }
-
-/* Mobile view */
 @media screen and (max-width: 767px) {
-  /* Hide nav links by default */
   .nav__menu {
-    display: none;          /* hidden completely */
     position: fixed;
     top: var(--header-height);
-    right: 0;
+    right: -100%;
     width: 80%;
     height: 100%;
     padding: 2rem;
     background-color: var(--second-color);
-    z-index: 999;
     transition: 0.5s;
   }
-
-  /* Hamburger visible */
-  .nav__toggle {
-    display: block;
-  }
-
-  /* Show menu when active */
-  .nav__menu.show {
-    display: block;        /* display links on click */
-  }
 }
-
 .nav__item {
   margin-bottom: var(--mb-4);
 }
-
 .nav__link {
   position: relative;
   color: #fff;
 }
-
 .nav__link:hover {
   position: relative;
 }
-
 .nav__link:hover::after {
   position: absolute;
   content: "";
@@ -172,11 +153,9 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
-
 .nav__logo {
   color: var(--second-color);
 }
-
 .nav__toggle {
   color: var(--second-color);
   font-size: 1.5rem;
@@ -198,7 +177,6 @@ img {
 .show {
   right: 0;
 }
-
 
 /*===== HOME =====*/
 .home {
